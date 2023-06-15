@@ -2,6 +2,7 @@ package lk.ijse.gmaisender.controller;
 
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -10,8 +11,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
+import lk.ijse.gmaisender.SendText;
+
+import javax.mail.MessagingException;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 
 public class SenderFormController {
+    public TextField txtTitle;
     @FXML
     private Hyperlink hypGmail;
     @FXML
@@ -52,9 +59,19 @@ public class SenderFormController {
     }
 
     public void btnSendOnAction(MouseEvent event) {
+        boolean b = sendMail(txtTitle.getText(), ariaMessage.getText(), txtGmail.getText());
+        if (b){
+            new Alert(Alert.AlertType.CONFIRMATION,"send !").show();
+        }
 
     }
-    private boolean sendMail(String gmail){
-        return false;
+    private boolean sendMail(String title,String message,String gmail){
+        try {
+            new SendText().sendMail(title,message,gmail);
+            return true;
+        } catch (IOException | MessagingException | GeneralSecurityException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
