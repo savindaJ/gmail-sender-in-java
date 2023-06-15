@@ -54,4 +54,7 @@ public class SenderFormController {
     public void btnSendOnAction(MouseEvent event) {
 
     }
+    private boolean sendMail(String gmail){
+        return false;
+    }
 }
