@@ -1,4 +1,3 @@
-import javafx.application.Application;
 import lk.ijse.gmaisender.AppInitializer;
 
 public class Launcher {
