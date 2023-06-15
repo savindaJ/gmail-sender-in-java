@@ -28,6 +28,11 @@ public class SenderFormController {
     @FXML
     private ImageView btnSend;
 
+    @FXML
+    void initialize(){
+        hypGmail.setText(HomeFormController.gmail);
+    }
+
     public void mouseExit(MouseEvent event) {
         if (event.getSource() instanceof ImageView) {
             ImageView icon = (ImageView) event.getSource();
@@ -59,7 +64,7 @@ public class SenderFormController {
     }
 
     public void btnSendOnAction(MouseEvent event) {
-        if (txtTitle.getText().equals("") && txtGmail.getText().equals("") && ariaMessage.getText().equals("")){
+        if (txtTitle.getText().equals("") || txtGmail.getText().equals("") || ariaMessage.getText().equals("")){
             new Alert(Alert.AlertType.WARNING,"please insert detail !").show();
         }else {
             boolean b = sendMail(txtTitle.getText(), ariaMessage.getText(), txtGmail.getText());

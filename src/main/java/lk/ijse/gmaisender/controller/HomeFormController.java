@@ -20,6 +20,9 @@ import javafx.util.Duration;
 import java.io.IOException;
 
 public class HomeFormController {
+
+    public static String gmail="";
+
     public AnchorPane root;
     @FXML
     private TextField txtGmail;
@@ -44,6 +47,7 @@ public class HomeFormController {
     }
 
     public void btnNextOnAction(MouseEvent event) {
+        gmail = txtGmail.getText();
         if (txtGmail.getText().equals("")){
             new Alert(Alert.AlertType.WARNING,"enter valid gmail address !").show();
             return;
