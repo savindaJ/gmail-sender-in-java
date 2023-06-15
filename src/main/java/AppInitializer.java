@@ -12,6 +12,7 @@ public class AppInitializer extends Application {
         primaryStage.setScene(mainScene);
         primaryStage.setTitle("your mail");
         primaryStage.centerOnScreen();
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
