@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.gmaisender.controller.HomeFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="298.0" prefWidth="452.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gmaisender.controller.HomeFormController">
+   <children>
+      <ImageView fitHeight="307.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/admin.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="155.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
+      <Label layoutX="40.0" layoutY="122.0" text="Enter your gmail address :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="389.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/dashbiordBooking.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnNext" fitHeight="51.0" fitWidth="47.0" layoutX="372.0" layoutY="152.0" onMouseClicked="#btnNextOnAction" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/send2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="197.0" layoutY="4.0" text="HOME">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
