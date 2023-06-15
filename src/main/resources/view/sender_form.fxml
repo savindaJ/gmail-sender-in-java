@@ -28,12 +28,12 @@
       </Label>
       <Hyperlink fx:id="hypGmail" layoutX="161.0" layoutY="61.0" prefHeight="23.0" prefWidth="279.0" text="gmail" />
       <TextArea fx:id="ariaMessage" layoutX="13.0" layoutY="178.0" prefHeight="151.0" prefWidth="579.0" style="-fx-background-color: blue;" />
-      <TextField fx:id="txtGmail" layoutX="130.0" layoutY="92.0" prefHeight="25.0" prefWidth="279.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-width: 0 0 3 0;">
+      <TextField fx:id="txtGmail" layoutX="162.0" layoutY="92.0" prefHeight="25.0" prefWidth="279.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-width: 0 0 3 0;">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <Label layoutX="20.0" layoutY="108.0" text="Reciver gmail">
+      <Label layoutX="22.0" layoutY="108.0" text="Reciver gmail">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
