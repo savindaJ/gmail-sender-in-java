@@ -7,16 +7,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="298.0" prefWidth="452.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gmaisender.controller.HomeFormController">
+<AnchorPane fx:id="root" prefHeight="187.0" prefWidth="452.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gmaisender.controller.HomeFormController">
    <children>
       <ImageView fitHeight="307.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/admin.png" />
+            <Image url="@../assets/drivertab2.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="155.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
-      <Label layoutX="40.0" layoutY="122.0" text="Enter your gmail address :">
+      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="117.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
+      <Label layoutX="40.0" layoutY="84.0" text="Enter your gmail address :">
          <font>
             <Font size="14.0" />
          </font>
@@ -26,7 +25,7 @@
             <Image url="@../assets/dashbiordBooking.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnNext" fitHeight="51.0" fitWidth="47.0" layoutX="372.0" layoutY="152.0" onMouseClicked="#btnNextOnAction" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnNext" fitHeight="51.0" fitWidth="47.0" layoutX="386.0" layoutY="114.0" onMouseClicked="#btnNextOnAction" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/send2.png" />
          </image>
