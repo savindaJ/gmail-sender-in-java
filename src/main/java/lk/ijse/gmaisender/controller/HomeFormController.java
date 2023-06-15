@@ -2,6 +2,7 @@ package lk.ijse.gmaisender.controller;
 
 import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +18,10 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class HomeFormController {
 
@@ -101,5 +105,16 @@ public class HomeFormController {
             scaleT.play();
             icon.setEffect(null);
         }
+    }
+
+    public void hypClickOnAction(ActionEvent event) {
+        try {
+            Desktop.getDesktop().browse(new URI("https://github.com/SavindaJayasekara"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+
     }
 }

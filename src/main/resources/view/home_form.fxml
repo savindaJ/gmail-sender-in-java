@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,8 +15,8 @@
             <Image url="@../assets/drivertab2.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="117.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
-      <Label layoutX="40.0" layoutY="84.0" text="Enter your gmail address :">
+      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="111.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
+      <Label layoutX="40.0" layoutY="78.0" text="Enter your gmail address :">
          <font>
             <Font size="14.0" />
          </font>
@@ -35,5 +36,6 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
+      <Hyperlink layoutX="7.0" layoutY="161.0" onAction="#hypClickOnAction" text="Developed by Savinda Jayasekara" />
    </children>
 </AnchorPane>
