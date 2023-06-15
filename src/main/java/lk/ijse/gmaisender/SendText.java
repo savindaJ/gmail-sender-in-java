@@ -93,15 +93,4 @@ public class SendText {
         }
     }
 
-    public static void main(String[] args) {
-        try {
-            new SendText().sendMail("rent(PVT)","created problem from debug !","thantrige32@gmail.com");
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (GeneralSecurityException e) {
-            e.printStackTrace();
-        }
-    }
 }
