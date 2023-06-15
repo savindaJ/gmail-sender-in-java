@@ -20,6 +20,6 @@ test application gmail sender !
 
 #how to create google gmail api credential 
 
-follow us https://www.youtube.com/channel/UCxpLM_eL_lvz8goQh9PaVhA
+going my yt -  https://www.youtube.com/channel/UCxpLM_eL_lvz8goQh9PaVhA
 
 #ENJOY !
