@@ -45,7 +45,7 @@ public class SendText {
         // Load client secrets.
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(gsonFactory,
                 new InputStreamReader(SendText.class.getResourceAsStream
-                        ("")));
+                        ("/api/readme"))); // enter your credential
         // Build flow and trigger user authorization request.
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
                 HTTP_TRANSPORT, gsonFactory, clientSecrets, Set.of(GmailScopes.GMAIL_SEND))
