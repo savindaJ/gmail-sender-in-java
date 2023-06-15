@@ -59,11 +59,14 @@ public class SenderFormController {
     }
 
     public void btnSendOnAction(MouseEvent event) {
-        boolean b = sendMail(txtTitle.getText(), ariaMessage.getText(), txtGmail.getText());
-        if (b){
-            new Alert(Alert.AlertType.CONFIRMATION,"send !").show();
+        if (txtTitle.getText().equals("") && txtGmail.getText().equals("") && ariaMessage.getText().equals("")){
+            new Alert(Alert.AlertType.WARNING,"please insert detail !").show();
+        }else {
+            boolean b = sendMail(txtTitle.getText(), ariaMessage.getText(), txtGmail.getText());
+            if (b){
+                new Alert(Alert.AlertType.CONFIRMATION,"send !").show();
+            }
         }
-
     }
     private boolean sendMail(String title,String message,String gmail){
         try {
