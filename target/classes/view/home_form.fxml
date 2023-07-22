@@ -15,7 +15,10 @@
             <Image url="@../assets/drivertab2.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="111.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;" />
+      <TextField fx:id="txtGmail" layoutX="40.0" layoutY="111.0" onKeyTyped="#txtGmailKeyTyped" prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: white; -fx-border-width: 0 0 3 0; -fx-border-color: blue;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
       <Label layoutX="40.0" layoutY="78.0" text="Enter your gmail address :">
          <font>
             <Font size="14.0" />
@@ -26,7 +29,7 @@
             <Image url="@../assets/dashbiordBooking.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="btnNext" fitHeight="51.0" fitWidth="47.0" layoutX="386.0" layoutY="114.0" onMouseClicked="#btnNextOnAction" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnNext" fitHeight="51.0" fitWidth="47.0" layoutX="372.0" layoutY="108.0" onMouseClicked="#btnNextOnAction" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/send2.png" />
          </image>
